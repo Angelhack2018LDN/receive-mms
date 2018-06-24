@@ -15,6 +15,14 @@ lein ring uberjar
 docker build -t awhitehouse/compojure-receive-mms .
 ```
 
+```
+
+Dockerhub:
+```
+docker login -u <username> -p <password>
+docker tag found-receive-mms:<commit> found-receive-mms:<develop or version>
+docker push found-receive-mms
+```
 
 ## Running
 
